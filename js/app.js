@@ -18,10 +18,10 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
             var diceDOM2 = document.getElementById('dice-2');
 
             diceDOM1.style.display = 'block';
-            diceDOM1.src = 'dice-' + dice1 + '.png';
+            diceDOM1.src = 'images/dice-' + dice1 + '.png';
 
             diceDOM2.style.display = 'block';
-            diceDOM2.src = 'dice-' + dice2 + '.png';
+            diceDOM2.src = 'images/dice-' + dice2 + '.png';
 
             //3. Actualizar el puuntaje en caso de no ser 1
             if (dice1 !== 1 && dice2 !== 1) {
