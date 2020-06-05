@@ -61,7 +61,25 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
             nextPlayer();
         }
     }
+})
 
+document.querySelector('.inputMaxScore').addEventListener('keypress', function (evt) {
+    var theEvent = evt || window.event;
+
+
+    // Manejo de pegado
+    if (theEvent.type === 'paste') {
+        key = event.clipboardData.getData('text/plain');
+    } else {
+        // Manejo del presionado de teclas
+        var key = theEvent.keyCode || theEvent.which;
+        key = String.fromCharCode(key);
+    }
+    var regex = /[0-9]|\./;
+    if (!regex.test(key)) {
+        theEvent.returnValue = false;
+        if (theEvent.preventDefault) theEvent.preventDefault();
+    }
 })
 
 document.querySelector('.btn-new').addEventListener('click', init)
