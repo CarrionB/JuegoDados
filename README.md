@@ -3,7 +3,7 @@
 ### Descripción
 ---
 
-Es un proyecto es un juego desarrollado en Javascript que consiste en tirar los dados hasta que uno de los jugadores llegue a la puntuacion maxima fijada.
+El un proyecto es un juego desarrollado en Javascript que consiste en tirar los dados hasta que uno de los jugadores llegue a la puntuacion maxima fijada.
 
 ### UI
 ---
